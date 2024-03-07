@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                org.calma.ui.laboratoire3.Partie_2.FichePartie2_Model
+                                org.calma.ui.laboratoire5.Partie2.SalmonApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.Path?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.HLineTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.VLineTo?>
+<?import javafx.scene.shape.ClosePath?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.calma.ui.laboratoire5.Partie2.SalmonController"
+            prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-color: silver;">
+
+    <Button fx:id="startBtn"
+            layoutX="466.0"
+            layoutY="140.0"
+            onAction="#handleButtonAction"
+            prefHeight="47.0"
+            prefWidth="99.0"
+            text="Start">
+        <font>
+            <Font name="Gill Sans MT" size="19.0"/>
+        </font>
+    </Button>
+
+    <!-- Rectangle vert -->
+    <Rectangle fx:id="greenBtn"
+               fill="0ab916"
+               onMouseClicked="#userInput"
+               stroke="black"
+               strokeType="INSIDE"
+               width="150.0"
+               height="150.0"
+               layoutX="125"
+               layoutY="50"
+                />
+
+    <Path fx:id="pathGreenBtn">
+        <elements>
+            <MoveTo x="100" y="35"/>
+            <HLineTo x="200"/>
+            <VLineTo y="135"/>
+            <HLineTo x="100"/>
+            <VLineTo y="35"/>
+        </elements>
+    </Path>
+
+
+    <!-- Rectangle rouge -->
+    <Rectangle fx:id="redBtn"
+               fill="ff1f1f"
+               onMouseClicked="#userInput"
+               stroke="black"
+               strokeType="INSIDE"
+               width="150.0"
+               height="150.0"
+               layoutX="275"
+               layoutY="50"/>
+
+    <Path fx:id="pathRedBtn">
+        <elements>
+            <MoveTo x="350" y="35"/>
+            <HLineTo x="450"/>
+            <VLineTo y="135"/>
+            <HLineTo x="350"/>
+            <VLineTo y="35"/>
+        </elements>
+    </Path>
+
+
+
+    <Rectangle fx:id="yellowBtn"
+               fill="e8eb23"
+               onMouseClicked="#userInput"
+               stroke="black"
+               strokeType="INSIDE"
+               width="150.0"
+               height="150.0"
+               layoutX="125"
+               layoutY="200"/>
+
+    <Path fx:id="pathYellowBtn">
+        <stroke>
+            <Color fx:value="transparent"/>
+        </stroke>
+        <elements>
+            <MoveTo x="100" y="280"/>
+            <HLineTo x="200"/>
+            <VLineTo y="380"/>
+            <HLineTo x="100"/>
+            <VLineTo y="280"/>
+        </elements>
+    </Path>
+
+    <Rectangle fx:id="blueBtn"
+               fill="DODGERBLUE"
+               onMouseClicked="#userInput"
+               stroke="black"
+               strokeType="INSIDE"
+               width="150.0"
+               height="150.0"
+               layoutX="275"
+               layoutY="200"/>
+
+    <Path fx:id="pathBlueBtn">
+        <stroke>
+            <Color fx:value="transparent"/>
+        </stroke>
+        <elements>
+            <MoveTo x="350" y="280"/>
+            <HLineTo x="450"/>
+            <VLineTo y="380"/>
+            <HLineTo x="350"/>
+            <VLineTo y="280"/>
+        </elements>
+    </Path>
+
+
+</AnchorPane>
